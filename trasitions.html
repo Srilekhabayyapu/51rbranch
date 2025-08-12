@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.transition{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display:inline-block;
+  display:none;
+}
+.transition> li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.transition a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-content,.dropdown-content1,.dropdown-content2,.dropdown-content3 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 220px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  border: 1px solid #ddd;
+}
+
+.dropdown-content li {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display:inline;
+}
+.dropdown:hover .dropdown-content1{
+  display:inline;
+}
+.container1{
+    display:inline-block;
+}
+.container2{
+    display:inline-block;
+}
+.container3{
+    display:inline-block;
+}
+.container4{
+    display:inline-block;
+}
+.submenu a::after {
+  content: "▶";
+  float: right;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.transition{
+    display:inline-block;
+    margin-right: 20px;
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+}
+</style>
+<body>
+    <div class="transition">
+           <li class="dropdown">
+            <a href="#">Courses</a>
+              <ul class="dropdown-content">
+                <li><a href="#">DSA to Development</a></li>
+                <li class="submenu1">
+                <a href="#">For Working Professionals</a></li>
+                <li><a href="#">For students</a></li>
+                <li><a href="#">Full Stack</a></li>
+                <li><a href="#">All courses</a></li>
+              </ul>
+            <a href="#">Placements</a>
+             <ul class="dropdown-content1">
+                <li><a href="#">Placements prep with DSA</a></li>
+                <li class="submenu2">
+                <a href="#">Tech Interview</a></li>
+                <li><a href="#">DSA to Development</a></li>
+                <li><a href="#">DSA-Self placed</a></li>
+                <li><a href="#">System Design</a></li>
+            </ul>
+            <a href="#">Data Science</a>
+             <ul class="dropdown-content2">
+                <li><a href="#">Data Science&Manchine Learning</a></li>
+                <li class="submenu3">
+                <a href="#">Data Analytics-Live</a></li>
+                <li><a href="#">Data Analytics classroom program</a></li>
+                <li><a href="#">Data Science Training</a></li>
+            </ul>
+            <a href="#">GATE</a>
+             <ul class="dropdown-content3">
+                <li><a href="#">GATE CS</a></li>
+                <li class="submenu4">
+                <a href="#">GATE DA</a></li>
+                <li><a href="#">GATE EC</a></li>
+                <li><a href="#">GATE ISRO</a></li>
+            </ul>
+        </ul>
+</body>
+</html>

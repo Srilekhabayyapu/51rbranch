@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+ul {
+  list-style: none;  /* Remove bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;     /* Arrange items in a row */
+  gap: 20px;         /* Space between menu items */
+}
+
+ul li {
+  position: relative;  /* For dropdown positioning */
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* Dropdown menu */
+ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+}
+
+ul li:hover ul {
+  display: block;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="#">Courses</a></li>
+  <li><a href="#">Placements</a></li>
+  <li><a href="#">Data Science</a></li>
+  <li>
+    <a href="#">GATE</a>
+    <ul>
+      <li><a href="#">GATE CS</a></li>
+      <li><a href="#">GATE DA</a></li>
+      <li><a href="#">GATE EC</a></li>
+      <li><a href="#">GATE ISRO</a></li>
+    </ul>
+  </li>
+</ul>
+</body>
+</html>
