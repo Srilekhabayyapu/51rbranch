@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .main {
+            display: flex;
+            gap: 30px;
+            background-color: white;
+            padding: 10px 20px;
+            font-family: 'calibri', Times, serif;
+        }
+        .menu {
+            position: relative; 
+            cursor: pointer;
+        }
+        .menu:hover {
+            color: black(255, 0, 0);
+        }
+        .submenu {
+            display: none; 
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            padding: 10px;
+            min-width: 200px;
+            border: 1px solid lightgray;
+        }
+        .menu:hover .submenu {
+            display: block;
+        }
+        .submenu div {
+            padding: 5px;
+            white-space: nowrap;
+        }
+
+        .submenu div:hover {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <h3>Courses ▼</h3>
+            <div class="submenu">
+                <div><h3>DSA to Development</h3></div>
+                <div class="list"><h3>For Working Professionals > </h3>
+                        <div><h3>For students > </h3></div>
+                        <div><h3>Full stack Development</h3></div>
+                        <div><h3>All Courses</h3></div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <h3>Placement ▼</h3>
+            <div class="submenu">
+                <div><h3>Placement preparation with DSA</h3></div>
+                <div><h3>Tech Interview101</h3></div>
+                <div><h3>DSA to Development</h3></div>
+                <div><h3>DSA self placed</h3></div>
+                <div><h3>System design</h3></div>
+                <div><h3>practice > </h3></div>
+            </div>
+        </div>
+        <div class="menu">
+            <h3>Data Science ▼</h3>
+            <div class="submenu">
+                <div><h3>Python</h3></div>
+                <div><h3>Machine Learning</h3></div>
+                <div><h3>Interview 101: DSA & System Design</h3></div>
+                <div><h3>Data Science Training Program</h3></div>
+                <div><h3>Data Structures & Algorithms in Python</h3></div>
+            </div>
+        </div>
+        <div class="menu">
+            <h3>GATE ▼ </h3>
+            <div class="submenu">
+                <div><h3>GATE CS</h3></div>
+                <div><h3>GATE DA</h3></div>
+                <div><h3>GATE EC</h3></div>
+                <div><h3>GATE ISRO</h3></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html
