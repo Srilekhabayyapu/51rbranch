@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#ff9900, #cc6600);
+  }
+
+  /* Outer circle */
+  .outer-circle {  transform: rotate(0deg) ;  z-index: 1;
+    width: 175px;
+    height: 185px;
+    background:yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: moveAround 1s linear infinite;
+    transform: translate(-50%,-50%);
+    z-index: 7;
+  }
+
+  /* Inner circle */
+  .inner-circle {
+    width: 160px;
+    height: 160px;
+    background: orange;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow:0 0 20px 10px yellow,0 0 50px 20px gold ;
+    z-index: 7
+  }
+
+  /* Animation to make it orbit inside */
+  @keyframes moveAround {
+    0%{
+        transform: rotate(0deg) ;  z-index: 1;
+    }
+    from{
+        transform: rotate(0deg) ;  z-index: 1;
+    }
+    to{
+        transform: rotate(360deg); z-index: 1;
+    }
+
+  }
+</style>
+</head>
+<body>
+
+<div class="outer-circle">
+  <div class="inner-circle"></div>
+</div>
+
+</body>
+</html>
