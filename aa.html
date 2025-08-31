@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #5c7cfa, #b197fc);
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 150px);
+      grid-gap: 20px;
+    }
+
+    .box {
+      display: grid;
+      background: white;
+      border: 2px solid #ddd;
+      height: 100px;
+    }
+    .layout1 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .layout2 {
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: 1fr 2fr;
+    }
+
+    .layout3 {
+      grid-template-columns:repeat(3,1fr);
+      grid-template-rows: 1fr 1fr;
+    }
+    .layout4 {
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .layout5 {
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .layout6{
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(3,fr);
+    }
+    .layout7 {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 2fr 1fr;
+    }
+    .left-panel{
+      flex:2;
+      border-right:3px solid gray;
+    }
+    .right-panel{
+      flex:1;
+      display:flex;
+      flex-direction:column;
+    }
+    .top-right{
+      flex:1;
+      border-bottom:3px solid gray;
+    }
+    .bottom-right{
+      flex:1;
+      display:flex;
+      flex-direction:column;
+    }
+    .bottom-right-top{
+      flex:1;
+      border-bottom: 3px solid gray;
+    }
+    .bottom-right-bottom{
+      flex:1;
+    }
+    .layout8 {
+     grid-template-rows: 2fr 3fr;
+     grid-template-columns:1fr,1fr;
+    }
+    .layout9 div{
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows:1fr 1fr 1fr;
+      border:2px solid gray;
+    }
+    .middle{
+     grid-column: 1/5;
+     grid-row: 2/3;
+    }
+    .cell {
+      border: 3px solid #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box layout1">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+
+    <div class="box layout2">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+
+    <div class="box layout3">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+
+    <div class="box layout4">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+
+    <div class="box layout5">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+
+   <div class=" box layout6">
+    <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    
+    <div class="box layout7">
+      <div class="left-panel"></div>
+      <div class="right-panel">
+        <div class="top-right"></div>
+        <div class="bottom-right">
+          <div class="bottom-right-top"></div>
+          <div class="bottom-right-bottom"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box layout8">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <div class="box layout9">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="middle"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      
+    </div>
+</div>
+</body>
+</html>

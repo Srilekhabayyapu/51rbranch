@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .main {
+      display: grid;
+      grid-template-rows: 2fr 1fr; /* Top (big), Bottom */
+      border: 6px solid gray;   /* Outer border thick */
+      background: white;
+      height:200px;
+      width:200px;
+    }
+
+    .main > div {
+      border: 2px solid gray;   /* Inner borders */
+      background: white;
+    }
+
+    /* Top section: 2 columns */
+    .top{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+
+    .top-right{
+      display: grid;
+      grid-template-rows: 1fr 1fr; /* two stacked */
+    }
+
+    /* Bottom section: 2 columns */
+    .bottom{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .box {
+      border: 2px solid gray;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <!-- Top Section -->
+    <div class="top">
+       <div class="box"></div>
+          <div class="top-right">
+                <div class="box"></div>
+                <div class="box"></div>
+          </div>
+        </div>
+     <!-- Bottom Section -->
+    <div class="bottom">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+</body>
+</html>
