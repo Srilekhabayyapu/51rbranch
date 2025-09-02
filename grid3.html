@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .grid1{
+        .grid3{
             display:grid;
             height:120px;
             width:200px;
             border:3px solid gray;
             background-color: white;
             grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,100px);
         }
-        .grid1 div {
+        .grid3 div {
             background:white;
             border:3px solid gray;
         }
+
     </style>
 </head>
 <body>
-    <div class="grid1">
+    <div class="grid3">
         <div></div>
         <div></div>
         <div></div>
     </div>
+    
 </body>
 </html>

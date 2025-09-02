@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<head>
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+      background: linear-gradient(to bottom, #6aa9f7, #b366f7);
+    }
+
+    .layout {
+      display: grid;
+      border: 2px solid white;
+      background: white;
+      height: 150px;
+    }
+
+    .layout div {
+      border: 1px solid #ccc;
+      background: #f2f2f2;
+    }
+
+    .layout1 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .layout2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .layout3 {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    .layout4 {
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .layout5 {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .layout6 {
+      grid-template-columns: 2fr 1fr;
+    }
+    .layout7 {
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
+    .layout8 {
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
+    .layout9 {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  </style>
+</head>
+<body>
+  <div class="layout layout1"><div></div><div></div><div></div></div>
+  <div class="layout layout2"><div></div><div></div></div>
+  <div class="layout layout3"><div></div><div></div><div></div><div></div></div>
+  <div class="layout layout4"><div></div><div></div><div></div><div></div></div>
+  <div class="layout layout5"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="layout layout6"><div></div><div></div></div>
+  <div class="layout layout7"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="layout layout8"><div></div><div></div><div></div><div></div></div>
+  <div class="layout layout9"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</body>
+</html>
+</body>
+</html>
