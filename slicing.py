@@ -163,10 +163,122 @@
 # for chr in n:
 #     res=res+chr.capitalize()
 # print(res)
-str="myVariableName"
-res=''
-for chr in str:
-    if str(chr).isupper:
+# reverse a string
+# s='hello'
+# rev=''
+# for chr in s:
+#   rev=chr+rev
+# print(rev)
+# palidrome check
+# s='madam'
+# rev=''
+# for chr in s:
+#     rev=chr+rev
+# if rev==s:
+#    print('palindrome')
+# else:
+#    print('not')
+# count of digits
+# n=123
+# sum=0
+# for i in range(1,3):
+#     n=n%10
+#     sum=sum+n
+# print(sum) 
+# product of digits
+# n=123
+# pro=1
+# for digit in str(n):
+#     pro=pro*int(digit)
+#     n//=10
+# print(pro)
+# s='apple'
+# c1=0
+# c2=0
+# vowels='aeiou'
+# for chr in s:
+#     if chr in vowels:
+#         c1=c1+1
+#     else:
+#        c2=c2+1
+# print(c1)
+# print(c2)
+# n=9
+# f=0
+# for i in range (1,n):
+#     if n%i==0:
+#         f=f+i
+# if f==n:
+#     print('perfect')
+# else:
+#     print('not')
+# # n = int(input("Enter a number: "))
+# original_n = n
+# sum_of_factorials = 0
 
-   
-    
+# while n > 0:
+#     digit = n % 10
+#     factorial = 1
+#     for i in range(1, digit + 1):
+#         factorial *= i
+#     sum_of_factorials += factorial
+#     n //= 10
+
+# if sum_of_factorials == original_n:
+#     print(f"{original_n} is a Strong Number.")
+# else:
+#     print(f"{original_n} is not a Strong Number.")
+# n = 5
+# a, b = 0, 1
+
+# print("Fibonacci Series:")
+# for _ in range(n):
+#     print(a, end=" ")
+#     a, b = b, a + b
+# prime numbers
+# m=1
+# n=10
+# c=0
+# for i in range(m,n+1):
+#     f=0
+#     for j in range(1,i+1):
+#         if i%j==0:
+#             f=f+1
+#     if f==2:
+#         c=c+1
+# print(c)
+# n=143
+# sum=0
+# temp=n
+# while n>0:
+#     r=n%10
+#     r=r**3
+#     sum=sum+r
+#     n//=10
+# if temp==sum:
+#     print('armstrong')
+# else:
+#     print('not')
+# for n in range(1,500):
+#     sum=0
+#     temp=n
+#     l=len(str(n))
+#     while n>0:
+#         r=n%10
+#         res=r**l
+#         sum=sum+res
+#         n//=10
+#     if temp==sum:
+#       print(temp)
+# first prime number
+n=10
+m=26
+lastprime=-1
+for i in range(10,25):
+    f=0
+    for j in range(1,i+1):
+        if i%j==0:
+            f=f+1
+    if f==2:
+       lastprime=i
+print(lastprime)
