@@ -236,17 +236,15 @@
 #     print(a, end=" ")
 #     a, b = b, a + b
 # prime numbers
-# m=1
-# n=10
-# c=0
+# m=10
+# n=30
 # for i in range(m,n+1):
 #     f=0
 #     for j in range(1,i+1):
 #         if i%j==0:
 #             f=f+1
 #     if f==2:
-#         c=c+1
-# print(c)
+#      print(i)
 # n=143
 # sum=0
 # temp=n
@@ -258,7 +256,7 @@
 # if temp==sum:
 #     print('armstrong')
 # else:
-#     print('not')
+    # print('not')
 # for n in range(1,500):
 #     sum=0
 #     temp=n
@@ -271,14 +269,36 @@
 #     if temp==sum:
 #       print(temp)
 # first prime number
-n=10
-m=26
-lastprime=-1
-for i in range(10,25):
-    f=0
-    for j in range(1,i+1):
-        if i%j==0:
-            f=f+1
-    if f==2:
-       lastprime=i
-print(lastprime)
+# n=10
+# m=26
+# lastprime=-1
+# for i in range(10,25):
+#     f=0
+#     for j in range(1,i+1):
+#         if i%j==0:
+#             f=f+1
+#     if f==2:
+#        lastprime=i
+# print(lastprime)
+# str='krishna'
+# vowels='aeiou'
+# rev=''
+# lastletter=-1
+# for chr in str:
+#     if chr in vowels:
+#         rev=rev+chr
+#         print(rev)
+#         break
+# str='krishna'
+# vowels='aeiou'
+# lastletter=None
+# for chr in reversed(str):
+#      if chr in vowels:
+#         lastletter=chr
+#         break
+# if lastletter:
+#     print(chr)
+# for i in range(1,11):
+#     if i%2==0:
+#         continue
+#     print(i)
