@@ -257,7 +257,8 @@
 #     print('armstrong')
 # else:
     # print('not')
-# for n in range(1,500):
+# def armstrong(m):
+#  for n in range(1,500):
 #     sum=0
 #     temp=n
 #     l=len(str(n))
@@ -267,7 +268,8 @@
 #         sum=sum+res
 #         n//=10
 #     if temp==sum:
-#       print(temp)
+#       return temp
+# print(armstrong(500))
 # first prime number
 # n=10
 # m=26
@@ -302,3 +304,192 @@
 #     if i%2==0:
 #         continue
 #     print(i)
+# fruits=['apple','banana','dragonfruit','orange','papaya','grapes']
+# vowels='aeiouAEIOU'
+# res=[]
+# for fruit in fruits:
+#      vowelsfromfruit=''
+#      for i in fruit:
+#         if i in vowels:
+#             vowelsfromfruit+=i
+#         print(vowelsfromfruit)
+# add two numbers
+# # def add(a,b):
+# #     return a+b
+# # print(add(10,20))
+# check even or odd
+# def check(n):
+#     if n%2==0:
+#         return "even"
+#     else:
+#         return "odd"
+# print(check(10))
+# check leap year or not
+# def leap(n):
+#     if n%100!=0 and n%400==0 or n%4==0:
+#         return "leap"
+# print(leap(3900))
+# check prime
+# def prime(n):
+#     f=0
+#     for j in range(1,n+1):
+#             if n%j==0:
+#                 f=f+1
+#     if f==2:
+#         return "prime"
+#     else:
+#         return "not"
+# print(prime(32))
+# def armstrong(m):
+#    for n in range(1,m+1):
+#         sum=0
+#         temp=n
+#         l=len(str(n))
+#         while n>0:
+#             r=n%10
+#             res=r**l
+#             sum=sum+res
+#             n//=10
+#         if temp==sum:
+#            return temp
+# print(armstrong(500))
+# def fact(n):
+#     if n==0:
+#         return 1
+#     else:
+#         return n*fact(n-1)
+# print(fact(5))
+# def sum(n,rev=0):
+#  if n==0:
+#     return 0
+#  else:
+#    return reversed(n%10+sum(n//10))
+# print(sum(123))
+# def sum_of_digits(n):
+#     if n == 0:
+#         return 0
+#     else:
+#         return n % 10 + sum_of_digits(n // 10)
+# print(sum_of_digits(123)) 
+# n=int(input('enter a number '))
+# def fibonacci(n):
+#     if n==0:
+#         return 0
+#     elif n==1:
+#         return 1
+#     else:
+#         return fibonacci(n-1)+fibonacci(n-2)
+# for i in range(n):
+#     print(fibonacci(i),end=' ')
+# lst=[121,333,421,563,454]
+# for num in lst:
+#     temp=0
+#     s=0
+#     sum=0
+#     list=[]
+#     while num>0:
+#       r=num%10
+#       sum=sum*10+r
+#       num=num//10
+#     if sum==temp:
+#        while temp>0:
+#           r=temp%10
+#           s=s+r
+#           temp=temp//10
+#           lst.append(s)
+# print(s)
+          
+# lst=[121,333,421,563,454]
+# result=[]
+# for num in lst:
+#     temp=num
+#     s=0
+#     sum=0
+#     while num>0:
+#       r=num%10
+#       sum=sum*10+r
+#       num=num//10
+#     if sum==temp:
+#       while temp>0:
+#           r=temp%10
+#           s=s+r
+#           temp=temp//10
+#       result.append(s)
+# print(result)
+# name='manoj'
+# res=''
+# for char in name:
+#     n=ord(char)
+#     res=res+chr(n+1)
+# print(res)
+# str='abcde'
+# sub=input('enter a string')
+# i=0
+# j=0
+# while i<len(str) and j<len(sub):
+#     if str[i]==sub[j]:
+#         j=j+1
+#     i=i+1
+# if j==len(sub):
+#     print('true')
+# else:
+#     print('false')
+# list=[1,2,3]
+# list.append(4)
+# print(list)
+# list=[1,2,3,4]
+# list.pop(3)
+# print(list)
+# list=[1,7,4,9]
+# list=sum(list)
+# print(list)
+
+# list=[1,2,2,2,3]
+# res=list.count(1)
+# print(res)
+# list=[1,2,3]
+# ly=list.reverse()
+# print(ly)
+# lst=[4,2,3,5]
+# for num in lst:
+#     if num%2==0:
+#         print(num)
+# n=123
+# temp=0
+# while n>0:
+#     r=n%10
+#     temp=temp*10+r
+#     n=n//10
+# print(temp)
+# n=153
+# temp=n
+# sum=0
+# l=len(str(n))
+# while n>0:
+#     r=n%10
+#     rev=r**l
+#     sum=sum+rev
+#     n=n//10
+# if temp==sum:
+#     print(temp)
+# n=121
+# sum=0
+# temp=n
+# while n>0:
+#     r=n%10
+#     sum=sum+temp
+#     n=n//10
+# if temp==sum:
+#     print(temp)
+# n=123
+# temp=n
+# while n>0:
+#     r=n%10
+#     temp=temp*10+r
+#     n=n//10
+# if sum==temp:
+#     print(temp)
+
+
+          
+      
